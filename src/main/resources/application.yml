@@ -1,0 +1,22 @@
+server:
+  port: 8191
+spring:
+  datasource:
+    url: jdbc:sqlserver://49.50.77.154;databaseName=FUNDDO
+    username: sa
+    password: Wh@tNxt$24680#
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace  

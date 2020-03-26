@@ -6,12 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController("/useradmin")
 public class UserAdminApiController {
-
-	
-	@RequestMapping(value="/useradmin/customer",method=RequestMethod.POST)
-	public String createCustomer() {
-		return "success";
-	}
 	
 	@RequestMapping(value="/useradmin/login",method=RequestMethod.POST)
 	public String loginUser() {
